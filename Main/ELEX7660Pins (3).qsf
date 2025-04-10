@@ -145,8 +145,8 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[3]
 #============================================================
 set_location_assignment PIN_V12 -to GPIO_0[0]
 set_instance_assignment -name IO_STANDARD "2.5-V" -to GPIO_0[0]
-set_location_assignment PIN_AF7 -to GPIO_0[1]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_0[1]
+set_location_assignment PIN_AF7 -to data_input
+
 set_location_assignment PIN_W12 -to GPIO_0[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_0[2]
 set_location_assignment PIN_AF8 -to GPIO_0[3]

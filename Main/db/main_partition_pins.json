@@ -8,6 +8,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[2]",
+					"strict" : false
+				},
+				{
 					"name" : "leds[3]",
 					"strict" : false
 				},
@@ -17,6 +25,10 @@
 				},
 				{
 					"name" : "leds[5]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[6]",
 					"strict" : false
 				},
 				{
@@ -40,11 +52,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "data_input",
+					"strict" : false
+				},
+				{
 					"name" : "s1",
 					"strict" : false
 				},
 				{
 					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "s2",
 					"strict" : false
 				}
 			]

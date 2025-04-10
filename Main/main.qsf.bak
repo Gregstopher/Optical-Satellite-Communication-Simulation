@@ -41,19 +41,13 @@ set_global_assignment -name DEVICE 5CSEMA4U23C6
 set_global_assignment -name TOP_LEVEL_ENTITY main
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:02:36  SEPTEMBER 14, 2015"
-set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
-set_global_assignment -name SYSTEMVERILOG_FILE SigGen.sv
-set_global_assignment -name SYSTEMVERILOG_FILE main.sv
-set_global_assignment -name SYSTEMVERILOG_FILE freqgen.sv
-set_global_assignment -name SYSTEMVERILOG_FILE decode7.sv
-set_global_assignment -name SYSTEMVERILOG_FILE decode2.sv
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_global_assignment -name VERILOG_FILE de0_nano_soc_baseline.v
 set_location_assignment PIN_U9 -to ADC_CONVST
 set_location_assignment PIN_V10 -to ADC_SCLK
 set_location_assignment PIN_AC4 -to ADC_SDI
@@ -617,4 +611,14 @@ set_location_assignment PIN_V10 -to ADC_SCK
 set_location_assignment PIN_V11 -to FPGA_CLK1_50
 set_location_assignment PIN_Y13 -to FPGA_CLK2_50
 set_location_assignment PIN_E11 -to FPGA_CLK3_50
+set_global_assignment -name SYSTEMVERILOG_FILE uart_rx.sv
+set_global_assignment -name SYSTEMVERILOG_FILE SigGen.sv
+set_global_assignment -name SYSTEMVERILOG_FILE main.sv
+set_global_assignment -name SYSTEMVERILOG_FILE freqgen.sv
+set_global_assignment -name SYSTEMVERILOG_FILE decode7.sv
+set_global_assignment -name SYSTEMVERILOG_FILE decode2.sv
+set_global_assignment -name VERILOG_FILE de0_nano_soc_baseline.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_01[1]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

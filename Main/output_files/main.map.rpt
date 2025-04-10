@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Wed Mar 26 17:12:08 2025
+Thu Apr 03 23:00:47 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,15 +13,21 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: freqgen:freqgen_0
- 11. Port Connectivity Checks: "siggen:siggen_0"
- 12. Port Connectivity Checks: "freqgen:freqgen_0"
- 13. Port Connectivity Checks: "decode7:decode7_0"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  8. State Machine - |main|uart_rx:uart_rx_0|state
+  9. State Machine - |main|siggen:siggen_0|state
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: freqgen:freqgen_0
+ 15. Parameter Settings for User Entity Instance: uart_rx:uart_rx_0
+ 16. Port Connectivity Checks: "uart_rx:uart_rx_0"
+ 17. Port Connectivity Checks: "siggen:siggen_0"
+ 18. Port Connectivity Checks: "freqgen:freqgen_0"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -47,14 +53,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Mar 26 17:12:08 2025       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 03 23:00:47 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; main                                        ;
 ; Top-level Entity Name           ; main                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 48                                          ;
-; Total pins                      ; 16                                          ;
+; Total registers                 ; 102                                         ;
+; Total pins                      ; 17                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -159,29 +165,30 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; SigGen.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/SigGen.sv  ;         ;
-; main.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/main.sv    ;         ;
-; freqgen.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/freqgen.sv ;         ;
-; decode7.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/decode7.sv ;         ;
-; decode2.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/decode2.sv ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                     ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; uart_rx.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/uart_rx.sv ;         ;
+; SigGen.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/SigGen.sv  ;         ;
+; main.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/main.sv    ;         ;
+; freqgen.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/freqgen.sv ;         ;
+; decode7.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/decode7.sv ;         ;
+; decode2.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/decode2.sv ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -189,25 +196,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 31             ;
+; Estimate of Logic utilization (ALMs needed) ; 70             ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 59             ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 2              ;
-;     -- 5 input functions                    ; 4              ;
-;     -- 4 input functions                    ; 1              ;
-;     -- <=3 input functions                  ; 52             ;
+; Combinational ALUT usage for logic          ; 124            ;
+;     -- 7 input functions                    ; 1              ;
+;     -- 6 input functions                    ; 12             ;
+;     -- 5 input functions                    ; 10             ;
+;     -- 4 input functions                    ; 17             ;
+;     -- <=3 input functions                  ; 84             ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 48             ;
+; Dedicated logic registers                   ; 102            ;
 ;                                             ;                ;
-; I/O pins                                    ; 16             ;
+; I/O pins                                    ; 17             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 44             ;
-; Total fan-out                               ; 323            ;
-; Average fan-out                             ; 2.32           ;
+; Maximum fan-out                             ; 96             ;
+; Total fan-out                               ; 758            ;
+; Average fan-out                             ; 2.92           ;
 +---------------------------------------------+----------------+
 
 
@@ -216,12 +223,40 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name     ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------+-------------+--------------+
-; |main                      ; 59 (18)             ; 48 (16)                   ; 0                 ; 0          ; 16   ; 0            ; |main                   ; main        ; work         ;
-;    |decode2:decode2_0|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|decode2:decode2_0 ; decode2     ; work         ;
-;    |freqgen:freqgen_0|     ; 34 (34)             ; 28 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |main|freqgen:freqgen_0 ; freqgen     ; work         ;
-;    |siggen:siggen_0|       ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |main|siggen:siggen_0   ; siggen      ; work         ;
+; |main                      ; 124 (20)            ; 102 (16)                  ; 0                 ; 0          ; 17   ; 0            ; |main                   ; main        ; work         ;
+;    |decode2:decode2_0|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|decode2:decode2_0 ; decode2     ; work         ;
+;    |decode7:decode7_0|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|decode7:decode7_0 ; decode7     ; work         ;
+;    |freqgen:freqgen_0|     ; 38 (38)             ; 31 (31)                   ; 0                 ; 0          ; 0    ; 0            ; |main|freqgen:freqgen_0 ; freqgen     ; work         ;
+;    |siggen:siggen_0|       ; 7 (7)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |main|siggen:siggen_0   ; siggen      ; work         ;
+;    |uart_rx:uart_rx_0|     ; 48 (48)             ; 49 (49)                   ; 0                 ; 0          ; 0    ; 0            ; |main|uart_rx:uart_rx_0 ; uart_rx     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------+
+; State Machine - |main|uart_rx:uart_rx_0|state                    ;
++-------------+------------+------------+-------------+------------+
+; Name        ; state.STOP ; state.DATA ; state.START ; state.IDLE ;
++-------------+------------+------------+-------------+------------+
+; state.IDLE  ; 0          ; 0          ; 0           ; 0          ;
+; state.START ; 0          ; 0          ; 1           ; 1          ;
+; state.DATA  ; 0          ; 1          ; 0           ; 1          ;
+; state.STOP  ; 1          ; 0          ; 0           ; 1          ;
++-------------+------------+------------+-------------+------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------+
+; State Machine - |main|siggen:siggen_0|state                      ;
++-------------+------------+------------+-------------+------------+
+; Name        ; state.STOP ; state.DATA ; state.START ; state.IDLE ;
++-------------+------------+------------+-------------+------------+
+; state.IDLE  ; 0          ; 0          ; 0           ; 0          ;
+; state.START ; 0          ; 0          ; 1           ; 1          ;
+; state.DATA  ; 0          ; 1          ; 0           ; 1          ;
+; state.STOP  ; 1          ; 0          ; 0           ; 1          ;
++-------------+------------+------------+-------------+------------+
 
 
 +---------------------------------------------------------------------------------+
@@ -229,15 +264,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+----------------------------------------+
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
-; freqgen:freqgen_0|increment[0,12..31]  ; Stuck at GND due to stuck port data_in ;
-; freqgen:freqgen_0|increment[7..11]     ; Stuck at VCC due to stuck port data_in ;
-; freqgen:freqgen_0|increment[6]         ; Stuck at GND due to stuck port data_in ;
-; freqgen:freqgen_0|increment[5]         ; Stuck at VCC due to stuck port data_in ;
-; freqgen:freqgen_0|increment[1..4]      ; Stuck at GND due to stuck port data_in ;
-; freqgen:freqgen_0|count[0..3]          ; Merged with freqgen:freqgen_0|count[4] ;
-; freqgen:freqgen_0|count[4]             ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 37 ;                                        ;
+; freqgen:freqgen_0|increment[0,5..31]   ; Stuck at GND due to stuck port data_in ;
+; freqgen:freqgen_0|increment[4]         ; Stuck at VCC due to stuck port data_in ;
+; freqgen:freqgen_0|increment[3]         ; Stuck at GND due to stuck port data_in ;
+; freqgen:freqgen_0|increment[2]         ; Stuck at VCC due to stuck port data_in ;
+; freqgen:freqgen_0|increment[1]         ; Stuck at GND due to stuck port data_in ;
+; freqgen:freqgen_0|count[0]             ; Merged with freqgen:freqgen_0|count[1] ;
+; freqgen:freqgen_0|count[1]             ; Stuck at GND due to stuck port data_in ;
+; uart_rx:uart_rx_0|state~4              ; Lost fanout                            ;
+; uart_rx:uart_rx_0|state~5              ; Lost fanout                            ;
+; siggen:siggen_0|state~4                ; Lost fanout                            ;
+; siggen:siggen_0|state~5                ; Lost fanout                            ;
+; siggen:siggen_0|state.STOP             ; Lost fanout                            ;
+; Total Number of Removed Registers = 39 ;                                        ;
 +----------------------------------------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                           ;
++-------------------------+--------------------+----------------------------------------+
+; Register name           ; Reason for Removal ; Registers Removed due to This Register ;
++-------------------------+--------------------+----------------------------------------+
+; siggen:siggen_0|state~4 ; Lost Fanouts       ; siggen:siggen_0|state.STOP             ;
++-------------------------+--------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -245,14 +294,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 48    ;
-; Number of registers using Synchronous Clear  ; 27    ;
+; Total registers                              ; 102   ;
+; Number of registers using Synchronous Clear  ; 53    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Clear ; 83    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 19    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; 3:1                ; 23 bits   ; 46 LEs        ; 0 LEs                ; 46 LEs                 ; Yes        ; |main|uart_rx:uart_rx_0|tick_count[8] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|uart_rx:uart_rx_0|bit_count[1]  ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |main|siggen:siggen_0|index[0]        ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |main|Mux0                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |main|uart_rx:uart_rx_0|Selector3     ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; No         ; |main|uart_rx:uart_rx_0|Selector0     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 
 
 +----------------------------------------------------------------+
@@ -265,40 +328,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uart_rx:uart_rx_0 ;
++----------------+---------+-------------------------------------+
+; Parameter Name ; Value   ; Type                                ;
++----------------+---------+-------------------------------------+
+; CLKS_PER_BIT   ; 5000000 ; Signed Integer                      ;
++----------------+---------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uart_rx:uart_rx_0"                                                                        ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; data_valid ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------------------------+
 ; Port Connectivity Checks: "siggen:siggen_0"     ;
 +---------------+-------+----------+--------------+
 ; Port          ; Type  ; Severity ; Details      ;
 +---------------+-------+----------+--------------+
+; pattern[3..0] ; Input ; Info     ; Stuck at VCC ;
 ; pattern[5..4] ; Input ; Info     ; Stuck at GND ;
+; pattern[7]    ; Input ; Info     ; Stuck at GND ;
 ; pattern[6]    ; Input ; Info     ; Stuck at VCC ;
-; pattern[3]    ; Input ; Info     ; Stuck at VCC ;
-; pattern[2]    ; Input ; Info     ; Stuck at GND ;
-; pattern[1]    ; Input ; Info     ; Stuck at VCC ;
-; pattern[0]    ; Input ; Info     ; Stuck at GND ;
 +---------------+-------+----------+--------------+
 
 
-+------------------------------------------------+
-; Port Connectivity Checks: "freqgen:freqgen_0"  ;
-+--------------+-------+----------+--------------+
-; Port         ; Type  ; Severity ; Details      ;
-+--------------+-------+----------+--------------+
-; freq[10..6]  ; Input ; Info     ; Stuck at VCC ;
-; freq[31..11] ; Input ; Info     ; Stuck at GND ;
-; freq[3..0]   ; Input ; Info     ; Stuck at GND ;
-; freq[5]      ; Input ; Info     ; Stuck at GND ;
-; freq[4]      ; Input ; Info     ; Stuck at VCC ;
-+--------------+-------+----------+--------------+
-
-
 +-----------------------------------------------+
-; Port Connectivity Checks: "decode7:decode7_0" ;
-+-----------+-------+----------+----------------+
-; Port      ; Type  ; Severity ; Details        ;
-+-----------+-------+----------+----------------+
-; num[3..1] ; Input ; Info     ; Stuck at GND   ;
-+-----------+-------+----------+----------------+
+; Port Connectivity Checks: "freqgen:freqgen_0" ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; freq[31..4] ; Input ; Info     ; Stuck at GND ;
+; freq[3]     ; Input ; Info     ; Stuck at VCC ;
+; freq[2]     ; Input ; Info     ; Stuck at GND ;
+; freq[1]     ; Input ; Info     ; Stuck at VCC ;
+; freq[0]     ; Input ; Info     ; Stuck at GND ;
++-------------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -306,26 +377,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 48                          ;
-;     CLR               ; 5                           ;
-;     CLR SCLR          ; 27                          ;
-;     plain             ; 16                          ;
-; arriav_lcell_comb     ; 65                          ;
-;     arith             ; 42                          ;
-;         1 data inputs ; 41                          ;
+; arriav_ff             ; 102                         ;
+;     CLR               ; 11                          ;
+;     CLR SCLR          ; 53                          ;
+;     ENA CLR           ; 19                          ;
+;     plain             ; 19                          ;
+; arriav_lcell_comb     ; 134                         ;
+;     arith             ; 68                          ;
+;         1 data inputs ; 67                          ;
 ;         2 data inputs ; 1                           ;
-;     normal            ; 23                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 4                           ;
-;         6 data inputs ; 2                           ;
-; boundary_port         ; 16                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 65                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 17                          ;
+;         5 data inputs ; 10                          ;
+;         6 data inputs ; 12                          ;
+; boundary_port         ; 17                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.60                        ;
-; Average LUT depth     ; 2.35                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.70                        ;
 +-----------------------+-----------------------------+
 
 
@@ -334,7 +408,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -344,45 +418,53 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Mar 26 17:11:51 2025
+    Info: Processing started: Thu Apr 03 23:00:36 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off main -c main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file uart_rx.sv
+    Info (12023): Found entity 1: uart_rx File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/uart_rx.sv Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file siggen.sv
-    Info (12023): Found entity 1: siggen File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/SigGen.sv Line: 8
+    Info (12023): Found entity 1: siggen File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/SigGen.sv Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file main.sv
-    Info (12023): Found entity 1: main File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/main.sv Line: 6
+    Info (12023): Found entity 1: main File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/main.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file freqgen.sv
-    Info (12023): Found entity 1: freqgen File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/freqgen.sv Line: 4
+    Info (12023): Found entity 1: freqgen File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/freqgen.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file decode7.sv
-    Info (12023): Found entity 1: decode7 File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/decode7.sv Line: 4
+    Info (12023): Found entity 1: decode7 File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/decode7.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file decode2.sv
-    Info (12023): Found entity 1: decode2 File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/decode2.sv Line: 4
+    Info (12023): Found entity 1: decode2 File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/decode2.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file de0_nano_soc_baseline.v
-    Info (12023): Found entity 1: de0_nano_soc_baseline File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/de0_nano_soc_baseline.v Line: 40
+    Info (12023): Found entity 1: de0_nano_soc_baseline File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/de0_nano_soc_baseline.v Line: 40
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Info (12128): Elaborating entity "decode2" for hierarchy "decode2:decode2_0" File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/main.sv Line: 28
-Info (12128): Elaborating entity "decode7" for hierarchy "decode7:decode7_0" File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/main.sv Line: 29
-Info (12128): Elaborating entity "freqgen" for hierarchy "freqgen:freqgen_0" File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/main.sv Line: 31
-Info (12128): Elaborating entity "siggen" for hierarchy "siggen:siggen_0" File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/main.sv Line: 32
+Info (12128): Elaborating entity "decode2" for hierarchy "decode2:decode2_0" File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/main.sv Line: 32
+Info (12128): Elaborating entity "decode7" for hierarchy "decode7:decode7_0" File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/main.sv Line: 33
+Info (12128): Elaborating entity "freqgen" for hierarchy "freqgen:freqgen_0" File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/main.sv Line: 35
+Info (12128): Elaborating entity "siggen" for hierarchy "siggen:siggen_0" File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/main.sv Line: 36
+Info (12128): Elaborating entity "uart_rx" for hierarchy "uart_rx:uart_rx_0" File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/main.sv Line: 37
+Warning (10230): Verilog HDL assignment warning at uart_rx.sv(50): truncated value with size 32 to match size of target (23) File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/uart_rx.sv Line: 50
+Warning (10230): Verilog HDL assignment warning at uart_rx.sv(111): truncated value with size 32 to match size of target (3) File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/uart_rx.sv Line: 111
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "leds[1]" is stuck at VCC File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/main.sv Line: 7
-    Warning (13410): Pin "leds[2]" is stuck at VCC File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/main.sv Line: 7
-    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/main.sv Line: 7
-    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/main.sv Line: 7
+    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/main.sv Line: 8
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/output_files/main.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "s2" File: C:/Users/gkirk/Desktop/ELEX-7660  Digital System Design/Working File/main.sv Line: 11
-Info (21057): Implemented 75 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
+Info (21057): Implemented 160 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
     Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 59 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4887 megabytes
-    Info: Processing ended: Wed Mar 26 17:12:08 2025
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:30
+    Info (21061): Implemented 143 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Thu Apr 03 23:00:47 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/output_files/main.map.smsg.
 
 
