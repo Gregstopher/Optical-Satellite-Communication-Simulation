@@ -52,6 +52,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "lcd_sda",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_scl",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_cs",
+					"strict" : false
+				},
+				{
 					"name" : "data_input",
 					"strict" : false
 				},

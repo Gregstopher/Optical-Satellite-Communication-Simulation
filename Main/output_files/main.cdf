@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA4U23) Path("C:/Users/Taewoo Kim/Desktop/testclnoe/Optical-Satellite-Communication-Simulation/Main/output_files/") File("main.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA4U23) Path("C:/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/output_files/") File("main.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

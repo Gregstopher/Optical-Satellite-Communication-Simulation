@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <unistd.h>
+#include "system.h"
+#include "io.h"
+
+int main() {
+    while (1) {
+        uint32_t sensor_val = IORD(PIO_BASE, 0);
+        printf("Sensor value: %u\n", sensor_val);
+        usleep(500000); // 0.5 seconds
+    }
+
+    return 0;
+}

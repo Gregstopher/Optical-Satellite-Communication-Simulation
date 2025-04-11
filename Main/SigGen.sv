@@ -66,7 +66,7 @@ module siggen ( input logic [7:0] pattern,
 					STOP : begin
 						out_bit = 1'b0;
 						if (index == 3'd0)
-							next_state = STOP;
+							next_state = IDLE;
 						//next_state = (index == 3'd0) ? IDLE : STOP;
 					end
 					

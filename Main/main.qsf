@@ -611,6 +611,11 @@ set_location_assignment PIN_V10 -to ADC_SCK
 set_location_assignment PIN_V11 -to FPGA_CLK1_50
 set_location_assignment PIN_Y13 -to FPGA_CLK2_50
 set_location_assignment PIN_E11 -to FPGA_CLK3_50
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_01[1]
+set_location_assignment PIN_AF7 -to data_input
+set_global_assignment -name QIP_FILE soft_processor/synthesis/soft_processor.qip
 set_global_assignment -name SYSTEMVERILOG_FILE uart_rx.sv
 set_global_assignment -name SYSTEMVERILOG_FILE SigGen.sv
 set_global_assignment -name SYSTEMVERILOG_FILE main.sv
@@ -618,8 +623,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE freqgen.sv
 set_global_assignment -name SYSTEMVERILOG_FILE decode7.sv
 set_global_assignment -name SYSTEMVERILOG_FILE decode2.sv
 set_global_assignment -name VERILOG_FILE de0_nano_soc_baseline.v
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO_01[1]
-set_location_assignment PIN_AF7 -to data_input
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

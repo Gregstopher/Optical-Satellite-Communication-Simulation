@@ -12,3 +12,12 @@ state.IDLE 0 0 0 0
 state.START 0 0 1 1 
 state.DATA 0 1 0 1 
 state.STOP 1 0 0 1 
+
+State Machine - |main|soft_processor:u0|soft_processor_processor:processor|soft_processor_processor_cpu:cpu|soft_processor_processor_cpu_nios2_oci:the_soft_processor_processor_cpu_nios2_oci|soft_processor_processor_cpu_debug_slave_wrapper:the_soft_processor_processor_cpu_debug_slave_wrapper|soft_processor_processor_cpu_debug_slave_tck:the_soft_processor_processor_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
