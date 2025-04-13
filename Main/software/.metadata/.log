@@ -1,4 +1,4 @@
-!SESSION 2025-04-10 16:55:33.900 -----------------------------------------------
+!SESSION 2025-04-13 14:49:34.677 -----------------------------------------------
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_05
 java.vendor=Oracle Corporation
@@ -6,14 +6,14 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
 Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
 
-!ENTRY org.eclipse.egit.ui 2 0 2025-04-10 16:57:41.006
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-13 14:50:14.760
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\gkirk'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2025-04-10 16:57:47.716
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2025-04-13 14:50:15.520
 !MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target. ; version: 1.100.0.v20160217-0435
 !STACK 0
 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
@@ -62,7 +62,7 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.security.cert.CertPathBuilder.build(Unknown Source)
 	... 33 more
 
-!ENTRY org.eclipse.oomph.setup.core 2 0 2025-04-10 16:57:48.985
+!ENTRY org.eclipse.oomph.setup.core 2 0 2025-04-13 14:50:15.791
 !MESSAGE sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 !STACK 0
 org.eclipse.oomph.util.IOExceptionWithCause: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
@@ -124,7 +124,7 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.security.cert.CertPathBuilder.build(Unknown Source)
 	... 43 more
 
-!ENTRY org.eclipse.oomph.setup.core 2 0 2025-04-10 16:57:49.495
+!ENTRY org.eclipse.oomph.setup.core 2 0 2025-04-13 14:50:16.201
 !MESSAGE sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 !STACK 0
 org.eclipse.oomph.util.IOExceptionWithCause: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
@@ -182,7 +182,7 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.security.cert.CertPathBuilder.build(Unknown Source)
 	... 39 more
 
-!ENTRY org.eclipse.oomph.setup.core 2 0 2025-04-10 16:57:50.237
+!ENTRY org.eclipse.oomph.setup.core 2 0 2025-04-13 14:50:16.858
 !MESSAGE sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 !STACK 0
 org.eclipse.oomph.util.IOExceptionWithCause: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
@@ -242,472 +242,56 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.security.cert.CertPathBuilder.build(Unknown Source)
 	... 41 more
 
-!ENTRY org.eclipse.cdt.core 1 0 2025-04-10 17:01:12.744
-!MESSAGE Indexed 'rx_to_computer_bsp' (83 sources, 64 headers) in 1.6 sec: 1,231 declarations; 2,730 references; 114 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.6%)
+!ENTRY org.eclipse.cdt.core 1 0 2025-04-13 14:52:12.414
+!MESSAGE Indexed 'computer-rx_bsp' (83 sources, 111 headers) in 2.67 sec: 3,115 declarations; 5,643 references; 73 unresolved inclusions; 3 syntax errors; 137 unresolved names (1.5%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2025-04-10 17:01:18.157
-!MESSAGE Indexed 'rx_to_computer' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-!SESSION 2025-04-10 17:10:23.289 -----------------------------------------------
-eclipse.buildId=4.5.2.M20160212-1500
-java.version=1.8.0_05
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
-Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+!ENTRY org.eclipse.cdt.core 1 0 2025-04-13 14:52:15.243
+!MESSAGE Indexed 'computer-rx' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY org.eclipse.egit.ui 2 0 2025-04-10 17:10:40.027
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\gkirk'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2025-04-10 17:10:40.976
-!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target. ; version: 1.100.0.v20160217-0435
-!STACK 0
-javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
-	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
-	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
-	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
-	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
-	at sun.security.ssl.Handshaker.process_record(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
-	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
-	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
-	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
-	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
-	at sun.security.validator.Validator.validate(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
-	... 27 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
-	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
-	at java.security.cert.CertPathBuilder.build(Unknown Source)
-	... 33 more
-
-!ENTRY org.eclipse.oomph.setup.core 2 0 2025-04-10 17:10:41.147
-!MESSAGE sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-!STACK 0
-org.eclipse.oomph.util.IOExceptionWithCause: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl.createInputStream(ECFURIHandlerImpl.java:295)
-	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:360)
-	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.handleArchiveRedirection(SetupCoreUtil.java:383)
-	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.configureResourceSet(SetupCoreUtil.java:365)
-	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.createResourceSet(SetupCoreUtil.java:133)
-	at org.eclipse.oomph.setup.ui.recorder.RecorderManager.<clinit>(RecorderManager.java:119)
-	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:196)
-	at org.eclipse.oomph.setup.ui.EarlyStartup.earlyStartup(EarlyStartup.java:22)
-	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
-	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2852)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
-	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
-	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
-	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
-	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
-	at sun.security.ssl.Handshaker.process_record(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.writeRecord(Unknown Source)
-	at sun.security.ssl.AppOutputStream.write(Unknown Source)
-	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:159)
-	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:166)
-	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:272)
-	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:277)
-	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:201)
-	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:239)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:618)
-	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
-	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
-	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
-	at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl.createInputStream(ECFURIHandlerImpl.java:232)
-	... 12 more
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
-	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
-	at sun.security.validator.Validator.validate(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
-	... 37 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
-	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
-	at java.security.cert.CertPathBuilder.build(Unknown Source)
-	... 43 more
-
-!ENTRY org.eclipse.oomph.setup.core 2 0 2025-04-10 17:10:41.580
-!MESSAGE sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-!STACK 0
-org.eclipse.oomph.util.IOExceptionWithCause: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl.createInputStream(ECFURIHandlerImpl.java:295)
-	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:360)
-	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.handleArchiveRedirection(SetupCoreUtil.java:383)
-	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.configureResourceSet(SetupCoreUtil.java:365)
-	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.createResourceSet(SetupCoreUtil.java:133)
-	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:419)
-	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$3(SetupUIPlugin.java:346)
-	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:243)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
-	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
-	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
-	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
-	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
-	at sun.security.ssl.Handshaker.process_record(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.writeRecord(Unknown Source)
-	at sun.security.ssl.AppOutputStream.write(Unknown Source)
-	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:159)
-	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:166)
-	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:272)
-	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:277)
-	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:201)
-	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:239)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:618)
-	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
-	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
-	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
-	at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl.createInputStream(ECFURIHandlerImpl.java:232)
-	... 8 more
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
-	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
-	at sun.security.validator.Validator.validate(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
-	... 33 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
-	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
-	at java.security.cert.CertPathBuilder.build(Unknown Source)
-	... 39 more
-
-!ENTRY org.eclipse.oomph.setup.core 2 0 2025-04-10 17:10:42.200
-!MESSAGE sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-!STACK 0
-org.eclipse.oomph.util.IOExceptionWithCause: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl.createInputStream(ECFURIHandlerImpl.java:295)
-	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:360)
-	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.handleArchiveRedirection(SetupCoreUtil.java:383)
-	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.configureResourceSet(SetupCoreUtil.java:365)
-	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.createResourceSet(SetupCoreUtil.java:133)
-	at org.eclipse.oomph.setup.internal.core.SetupContext.associate(SetupContext.java:359)
-	at org.eclipse.oomph.setup.internal.core.SetupContext.createSelf(SetupContext.java:238)
-	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:563)
-	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$3(SetupUIPlugin.java:346)
-	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:243)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
-	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
-	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
-	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
-	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
-	at sun.security.ssl.Handshaker.process_record(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
-	at sun.security.ssl.SSLSocketImpl.writeRecord(Unknown Source)
-	at sun.security.ssl.AppOutputStream.write(Unknown Source)
-	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:159)
-	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:166)
-	at org.apache.http.impl.AbstractHttpClientConnection.doFlush(AbstractHttpClientConnection.java:272)
-	at org.apache.http.impl.AbstractHttpClientConnection.flush(AbstractHttpClientConnection.java:277)
-	at org.apache.http.impl.conn.AbstractClientConnAdapter.flush(AbstractClientConnAdapter.java:201)
-	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:239)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
-	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:618)
-	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
-	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
-	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
-	at org.eclipse.oomph.setup.internal.core.util.ECFURIHandlerImpl.createInputStream(ECFURIHandlerImpl.java:232)
-	... 10 more
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
-	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
-	at sun.security.validator.Validator.validate(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
-	... 35 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
-	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
-	at java.security.cert.CertPathBuilder.build(Unknown Source)
-	... 41 more
-
-!ENTRY org.eclipse.cdt.core 1 0 2025-04-10 17:12:34.628
-!MESSAGE Indexed 'rx_to_computer_bsp' (83 sources, 64 headers) in 1.87 sec: 1,231 declarations; 2,730 references; 114 unresolved inclusions; 6 syntax errors; 191 unresolved names (4.6%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2025-04-10 17:12:37.003
-!MESSAGE Indexed 'rx_to_computer' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2025-04-10 18:44:04.034
-!MESSAGE Indexed 'rx_to_computer_bsp' (83 sources, 152 headers) in 0.765 sec: 5,278 declarations; 8,619 references; 0 unresolved inclusions; 2 syntax errors; 8 unresolved names (0.058%)
-
-!ENTRY org.eclipse.cdt.core 1 0 2025-04-10 18:44:12.633
-!MESSAGE Indexed 'rx_to_computer_bsp' (83 sources, 152 headers) in 0.675 sec: 5,278 declarations; 8,619 references; 0 unresolved inclusions; 2 syntax errors; 8 unresolved names (0.058%)
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 18:56:38.900
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 14:54:47.285
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 18:56:41.396
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf]
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 14:54:49.598
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/computer-rx/computer-rx.elf]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:21:15.441
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 14:56:11.275
 !MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:21:16.321
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 14:56:12.014
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:21:18.724
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf]
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 14:56:14.323
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/computer-rx/computer-rx.elf]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:37:50.201
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:37:51.048
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 15:25:28.053
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:37:53.674
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf]
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 15:25:30.065
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/computer-rx/computer-rx.elf]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:38:36.028
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 15:27:49.789
 !MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:38:36.847
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 15:27:50.321
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/computer-rx/computer-rx.elf]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:38:39.151
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:41:23.016
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:41:23.843
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 19:41:26.099
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:10:04.338
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:10:05.083
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:10:07.526
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:25:26.674
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:25:27.536
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:25:29.918
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:27:18.043
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:27:18.880
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:27:21.234
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:30:06.887
-!MESSAGE Terminated Launch with connection: 20DE-SoC on localhost [USB-1]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:30:07.705
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf]
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:30:11.314
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 15:27:52.342
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --tcpport=auto]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:33:09.556
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 15:28:39.764
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
 
-!ENTRY com.altera.sbtgui.launch 4 0 2025-04-10 20:33:11.606
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --stop] return code: 8
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 15:28:41.645
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/computer-rx/computer-rx.elf]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:33:11.647
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf]
-
-!ENTRY com.altera.sbtgui.launch 4 0 2025-04-10 20:33:14.133
-!MESSAGE Failed Executing: [nios2-download, '--cable=DE-SoC on localhost [USB-1]', --device=2, --instance=0, --go, /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf] return code: 8
-
-!ENTRY com.altera.sbtgui.launch 4 0 2025-04-10 20:33:14.148
-!MESSAGE Downloading ELF Process failed
-
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:33:40.400
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 15:29:39.675
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
 
-!ENTRY com.altera.sbtgui.launch 1 0 2025-04-10 20:33:43.098
-!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/rx_to_computer/rx_to_computer.elf]
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 15:29:41.542
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/computer-rx/computer-rx.elf]
 
-!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-04-10 20:34:39.487
-!MESSAGE Error disposing widget for : org.eclipse.e4.ui.model.application.ui.menu.impl.ToolControlImpl
-!STACK 0
-java.lang.NullPointerException
-	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.showStack(TrimStack.java:1082)
-	at org.eclipse.e4.ui.workbench.addons.minmax.TrimStack$10.widgetDisposed(TrimStack.java:589)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:123)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1118)
-	at org.eclipse.swt.widgets.Widget.release(Widget.java:822)
-	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:891)
-	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:165)
-	at org.eclipse.swt.widgets.Widget.release(Widget.java:825)
-	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:460)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:177)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:914)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:869)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:894)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:842)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$3.run(PartRenderingEngine.java:837)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:821)
-	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1973)
-	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1600)
-	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1542)
-	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1628)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1625)
-	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1189)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1171)
-	at org.eclipse.ui.internal.Workbench.access$22(Workbench.java:1113)
-	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1454)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1451)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1424)
-	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1596)
-	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1542)
-	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1628)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1625)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1639)
-	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:527)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:518)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
-	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
-	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1703)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4678)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4774)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4774)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
-	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 15:29:58.081
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-04-13 15:29:59.991
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=DE-SoC on localhost [USB-1]' --device=2 --instance=0 --go /cygdrive/c/Users/gkirk/Desktop/Optical-Satellite-Communication-Simulation/Main/software/computer-rx/computer-rx.elf]

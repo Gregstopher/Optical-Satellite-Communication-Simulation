@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
-newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\gkirk\\Desktop\\Optical-Satellite-Communication-Simulation\\Main\\software\\rx_to_computer
+newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\gkirk\\Desktop\\Optical-Satellite-Communication-Simulation\\Main\\software\\computer-rx
 newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\gkirk\\Desktop\\Optical-Satellite-Communication-Simulation\\Main\\soft_processor.sopcinfo
-newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\gkirk\\Desktop\\Optical-Satellite-Communication-Simulation\\Main\\software\\rx_to_computer_bsp
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\gkirk\\Desktop\\Optical-Satellite-Communication-Simulation\\Main\\software\\computer-rx_bsp

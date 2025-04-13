@@ -1,9 +1,0 @@
-20:33:37 **** Incremental Build of configuration Nios II for project rx_to_computer ****
-make all 
-Info: Building ../rx_to_computer_bsp/
-C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../rx_to_computer_bsp/
-[BSP build complete]
-[rx_to_computer build complete]
-
-20:33:39 Build Finished (took 1s.609ms)
-

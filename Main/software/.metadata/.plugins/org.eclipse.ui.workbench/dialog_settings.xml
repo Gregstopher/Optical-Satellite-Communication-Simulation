@@ -22,7 +22,7 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
-			<item value="C:\Users\gkirk\Desktop\fileout\software\lab5_software_fileout"/>
+			<item value="C:\Users\gkirk\Desktop\Optical-Satellite-Communication-Simulation-depreciated\Main\software\rx_to_computer"/>
 		</list>
 	</section>
 </section>

@@ -79,7 +79,7 @@ module main ( input logic CLOCK_50,       // 50 MHz clock
 
    freqgen  #(.FCLK(50000000)) freqgen_0 (.clk(CLOCK_50), .freq(32'd10), .reset_n(s1), .new_freq(new_clk));
    siggen siggen_0 (.pattern(current_pattern),.clk(new_clk), .rst_n(s1), .out_bit(result));
-	uart_rx  #(.CLKS_PER_BIT(5000000)) uart_rx_0 (.clk(CLOCK_50), .rst_n(s2), .rx_serial(data_input), .data(output_data), .data_valid(data_valid));
+	uart_rx  #(.CLKS_PER_BIT(5208)) uart_rx_0 (.clk(CLOCK_50), .rst_n(s2), .rx_serial(data_input), .data(output_data), .data_valid(data_valid));
 	 
 	 
 	// use count to divide clock and generate a 2 bit digit counter to determine which digit to display
