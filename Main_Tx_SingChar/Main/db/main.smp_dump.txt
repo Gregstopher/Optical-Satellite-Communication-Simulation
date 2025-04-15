@@ -1,0 +1,15 @@
+
+State Machine - |main|uart_rx_v2:uart_rx_0|state
+Name state.STOP state.DATA state.START state.IDLE state.DONE 
+state.IDLE 0 0 0 0 0 
+state.START 0 0 1 1 0 
+state.DATA 0 1 0 1 0 
+state.STOP 1 0 0 1 0 
+state.DONE 0 0 0 1 1 
+
+State Machine - |main|siggen:siggen_0|state
+Name state.STOP state.DATA state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.DATA 0 1 0 1 
+state.STOP 1 0 0 1 
