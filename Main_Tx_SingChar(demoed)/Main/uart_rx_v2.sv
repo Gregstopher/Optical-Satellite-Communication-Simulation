@@ -1,3 +1,8 @@
+// uart_rx_v2.sv
+// Description: This module for UART in standardized way testing version 2
+// Date: 2025-04-10
+// Author: Taewoo Kim, Gregory Kirk
+
 module uart_rx_v2 #(
     parameter CLK_FREQ = 50_000_000,   // 50 MHz FPGA clock
     parameter BAUD_RATE = 9600

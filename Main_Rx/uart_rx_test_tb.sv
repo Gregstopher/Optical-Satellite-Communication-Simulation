@@ -1,3 +1,8 @@
+// uart_rx_test_tb.sv
+// Description: This module is to test uart
+// Date: 2025-04-10
+// Author: Taewoo Kim, Gregory Kirk
+
 module tb_uart_rx;
 
   // Parameter

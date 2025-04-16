@@ -1,3 +1,8 @@
+// uart_rx.sv
+// Description: This module is to sample the uart
+// Date: 2025-04-10
+// Author: Taewoo Kim, Gregory Kirk
+
 module UART_RX
   #(parameter CLKS_PER_BIT = 217) // Set the number of system clocks per UART bit
   (
